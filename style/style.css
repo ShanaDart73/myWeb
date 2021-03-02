@@ -2,3 +2,47 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  color: beige;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1em 1em 0 1em;
+  /*background-color: #fa8131;*/
+}
+
+/*#menu{
+  display: none;
+}*/
+
+.header-menu {}
+
+#logo img {
+  border-radius: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+  #logo img {
+    width: 65px;
+  }
+}
+
+a {
+  color: beige;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#search-btn {}
+
+.recent-release-header {
+  background-color: #fa8131;
+}
