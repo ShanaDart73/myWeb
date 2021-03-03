@@ -13,10 +13,9 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 1em 1em 0 1em;
-  /*background-color: #fa8131;*/
 }
 
-#menu{
+.menu{
   position: fixed;
   top: 10%;
   left: 0;
@@ -26,13 +25,6 @@ header {
   min-width: 20vw;
   min-height: 40vh;
   z-index: 3;
-  display: none;
-}
-
-#barMenu:hover > #menu {
-  display: block;
-  min-width: 70vw;
-  min-height: 100vh;
 }
 
 .header-menu {}
