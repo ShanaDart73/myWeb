@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: beige;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1em 1em 0 1em;
+}
+
+.menu{
+  position: fixed;
+  top: 10%;
+  left: 0;
+  background-color: black;
+  padding: 1em;
+  transition: width 5s ease;
+  min-width: 20vw;
+  min-height: 40vh;
+  z-index: 3;
+}
+
+.header-menu {}
+
+#logo img {
+  border-radius: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+  #logo img {
+    width: 65px;
+  }
+}
+
+a {
+  color: beige;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+#search-btn {}
+
+.recent-release-header {
+  background-color: #fa8131;
+}
