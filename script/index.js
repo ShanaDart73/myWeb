@@ -1,19 +1,18 @@
 
-//document.getElementById('menu').
-// mouseover / mouseout
-// querySelector()
-// object.addEventListener(event, function);
-
-document.getElementById("menu").hidden = true;
-
+/*
 let barMenu = document.getElementById("barMenu");
 
-barMenu.addEventListener("mouseenter",() => {
-    document.getElementById("menu").style.display = "block";  
-});
+let menu = document.getElementById("menu");
+menu.hidden = true;
 
-barMenu.addEventListener("mouseleave", () => {
-  document.getElementById("menu").style.dispaly = "none";
-});
+barMenu.addEventListener("mouseenter", () => {
+  menu.style.display = "block";
+  menu.style.transition = "all 5s";
+  menu.style.minWidth = "80vw";
+  menu.style.minHeight = "100vh";
+}, { passive: true });
 
-
+barMenu.removeEventListener("mouseenter", () => {
+  menu.style.display = "block";
+}, { passive: true });
+*/
