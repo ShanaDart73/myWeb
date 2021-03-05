@@ -4,6 +4,7 @@
 }
 
 body {
+  box-sizing: border-box;
   color: beige;
   background-color: black;
 }
@@ -115,12 +116,12 @@ header {
   padding: 1.3em;
 }
 
-.popular-ongoing-update div {
+.popular-ongoing-update > div {
   display: flex;
   padding-bottom: 1em;
 }
 
-.popular-ongoing-update div > div {
+.popular-ongoing-update div div {
   display: flex;
   flex-flow: column nowrap;
   padding: 1em 0 0 1em;
