@@ -8,31 +8,6 @@ body {
   background-color: black;
 }
 
-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 1em 1em 0 1em;
-}
-
-.menu{
-  position: fixed;
-  top: 10%;
-  left: 0;
-  background-color: black;
-  padding: 1em;
-  transition: width 5s ease;
-  min-width: 20vw;
-  min-height: 40vh;
-  z-index: 3;
-}
-
-.barMenu > img:hover {
-  border: 1px solid #fa8131;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 #logo img {
   border-radius: 0.5em;
 }
@@ -60,9 +35,32 @@ figcaption {
   padding-left: 1em;
 }
 
-/* Recent Release header */
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1em 1em 0 1em;
+}
 
-.recent-release-header {
+.menu{
+  position: fixed;
+  top: 10%;
+  left: 0;
+  background-color: black;
+  padding: 1em;
+  transition: width 5s ease;
+  min-width: 20vw;
+  min-height: 40vh;
+  z-index: 3;
+}
+
+.barMenu > img:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #555;
+}
+.recent-release-header,
+.popular-ongoing-header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -70,17 +68,26 @@ figcaption {
   background-color: #fa8131;
 }
 
-.recent-release-header p {
+.recent-release-header p,
+.popular-ongoing-header p {
   font-size: 1.3em;
   padding-left: 1em;
 }
 
-.recent-release-header ul {
+.recent-release-header ul,
+.popular-ongoing-header ul {
   display: flex;
 }
 
-.recent-release-header ul li {
+.recent-release-header ul li,
+.popular-ongoing-header ul li {
   padding: 0.2em 1em 0 0;
+}
+
+.recent-release-header ul li a:hover,
+.popular-ongoing-header ul li a:hover {
+  color: black;
+  
 }
 
 /* Recent Release */
@@ -98,29 +105,6 @@ figcaption {
 .recent-release a:hover {
   color: black;
   background-color: #fa8131;
-}
-
-/* Popular Ongoing header */
-
-.popular-ongoing-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fa8131;
-}
-
-.popular-ongoing-header p {
-  font-size: 1.3em;
-  padding-left: 1em;
-}
-
-.popular-ongoing-header ul {
-  display: flex;
-}
-
-.popular-ongoing-header ul li {
-  padding: 0.2em 1em 0 0;
 }
 
 /* Popular Ongoing */
