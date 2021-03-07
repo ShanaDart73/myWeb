@@ -7,3 +7,4 @@ function handler() {
   ? isHidden.hidden = true 
   : isHidden.hidden = false;
 }
+
