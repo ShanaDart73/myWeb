@@ -26,7 +26,7 @@ function displayOngoingSeries() {
   : ongoingSeries.hidden = false;
 }
 
-const genres = document.querySelector('.genres');
+const genres = document.querySelector('#genres');
 genres.hidden = true;
 
 function displayGenres() {

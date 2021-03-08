@@ -45,20 +45,34 @@ header {
 
 .menu{
   position: fixed;
-  top: 10%;
+  top: 0;
   left: 0;
   background-color: black;
   padding: 1em;
-  transition: width 5s ease;
+  transition: all 5s ease;
   min-width: 80vw;
   min-height: 100vh;
   z-index: 3;
+}
+
+.menu:hover {
+  
 }
 
 .barMenu > img:hover {
   border-radius: 5px;
   cursor: pointer;
   background-color: #555;
+  filter: drop-shadow(2px 2px 2px #fa8131);
+}
+
+.closeMenu {
+  padding-bottom: 1em;
+}
+
+.closeMenu img:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px #fa8131);
 }
 
 /* ... */
@@ -158,6 +172,12 @@ header {
 .ongoing-series p,
 .genres p {
   padding-bottom: 0.5em;
+}
+
+.genres {
+  display: flex;
+  flex-flow: column wrap;
+  height: 200px;
 }
 
 /* ... */
