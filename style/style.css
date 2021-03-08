@@ -50,8 +50,8 @@ header {
   background-color: black;
   padding: 1em;
   transition: width 5s ease;
-  min-width: 20vw;
-  min-height: 40vh;
+  min-width: 80vw;
+  min-height: 100vh;
   z-index: 3;
 }
 
@@ -60,6 +60,9 @@ header {
   cursor: pointer;
   background-color: #555;
 }
+
+/* ... */
+
 .recent-release-header,
 .popular-ongoing-header {
   display: flex;
@@ -129,4 +132,50 @@ header {
 
 .popular-ongoing-update p {
   padding-bottom: 0.5em;
+}
+/* ... */
+
+.recent-added-header p,
+.ads p,
+.ongoing-series-header p,
+.genres-header p {
+  border: 1px solid #fa8131;
+  padding: 0.5em;
+  margin: 0 1em 1em 1em;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.recent-added,
+.ongoing-series,
+.genres {
+  padding: 0 1em 1em 1em;
+  margin: 0 1em;
+}
+
+.recent-added p,
+.ongoing-series p,
+.genres p {
+  padding-bottom: 0.5em;
+}
+
+/* ... */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer ul > li {
+  padding-right: 1.5em;
+}
+
+.footer p {
+  padding: 0 0.5em;
 }

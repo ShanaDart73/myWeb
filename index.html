@@ -15,7 +15,7 @@
     <div class="header-menu" id="logo">
       <img src="/resource/logo.png" width="100px" alt="Donghua Anime logo" />
     </div>
-    <div class="menu" id="is-hidden">
+    <div class="menu" id="isNavHidden">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Anime List</a></li>
@@ -277,7 +277,7 @@
     </di>
     <div>
       <div class="recent-added-header">
-        <p>Recently Added Series</p>
+        <p onclick="displayRecentAdded()">Recently Added Series</p>
       </div>
       <div class="recent-added">
         <p><a href="#">Wu shen zhu zai - Martial Master</a></p>
@@ -308,7 +308,7 @@
     </div>
     <div>
       <div class="ongoing-series-header">
-        <p>Ongoing series</p>
+        <p onclick="displayOngoingSeries()">Ongoing series</p>
       </div>
       <div class="ongoing-series">
         <p><a href="#">Wu shen zhu zai - Martial Master</a></p>
@@ -335,7 +335,7 @@
     </div>
     <div>
       <div class="genres-header">
-        <p>Genres</p>
+        <p onclick="displayGenres()">Genres</p>
       </div>
       <div class="genres">
         <p><a href="#">Action</a></p>
@@ -360,13 +360,13 @@
         <p><a href="#">Supernatural</a></p>
       </div>
     </div>
-  <footer>
+  <footer class="footer">
     <ul>
       <li><a href="#">About us</a></li>
       <li><a href="#">Contact us</a></li>
       <li><a href="#">Privacy</a></li>
     </ul>
-    <p>Copyright</p>
+    <p>&#169;</p>
     <p><a href="#">Back to top</a></p>
   </footer>
   <script src="script/index.js"></script>
