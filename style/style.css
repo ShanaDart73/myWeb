@@ -55,15 +55,18 @@ header {
   z-index: 3;
 }
 
-.menu:hover {
-  
-}
-
 .barMenu > img:hover {
   border-radius: 5px;
   cursor: pointer;
   background-color: #555;
   filter: drop-shadow(2px 2px 2px #fa8131);
+
+  
+}
+@media (min-width: 850px) {
+  .barMenu {
+    display: none;
+  }
 }
 
 .closeMenu {
@@ -199,3 +202,5 @@ header {
 .footer p {
   padding: 0 0.5em;
 }
+
+/* Desktop / Laptop View */
