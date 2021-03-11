@@ -2,13 +2,13 @@
 const isNavHidden = document.querySelector('#isNavHidden');
 isNavHidden.hidden = true;
 
-function handler() {
+function displayMenu() {
   (!isNavHidden.hidden) 
   ? isNavHidden.hidden = true 
   : isNavHidden.hidden = false;
 }
 
-const recentAdded = document.querySelector('.recent-added');
+const recentAdded = document.querySelector('.added');
 recentAdded.hidden = true;
 
 function displayRecentAdded() {
@@ -17,7 +17,7 @@ function displayRecentAdded() {
   : recentAdded.hidden = false;
 }
 
-const ongoingSeries = document.querySelector('.ongoing-series');
+const ongoingSeries = document.querySelector('.ongoing');
 ongoingSeries.hidden = true;
 
 function displayOngoingSeries() {

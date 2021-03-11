@@ -19,6 +19,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1240px) {
+  input {
+    display: none;
+  }
+}
+
 a {
   color: beige;
   text-decoration: none;
@@ -60,13 +66,6 @@ header {
   cursor: pointer;
   background-color: #555;
   filter: drop-shadow(2px 2px 2px #fa8131);
-
-  
-}
-@media (min-width: 850px) {
-  .barMenu {
-    display: none;
-  }
 }
 
 .closeMenu {
@@ -203,4 +202,158 @@ header {
   padding: 0 0.5em;
 }
 
+/* Mobile Landscape View */
+
+@media (min-width: 750px) {
+  .container {
+    width: 90vw;
+    position: relative;
+    left: 5%;
+  }
+}
+
+/* Tablet View */
+
+@media (min-width: 880px) {
+  .container {
+    width: 80vw;
+    position: relative;
+    left: 10%;
+  }
+
+  .popular-ongoing-update {
+    display: flex;
+    flex-flow: column wrap;
+    height: 68.8em;
+  }
+
+  .description {
+    width: 20.5em;
+  }
+
+  .recent-added,
+  .ongoing-series {
+    display: flex;
+    flex-flow: column wrap;
+    height: 19em;
+    margin: 0;
+  }
+
+  .recent-added p,
+  .ongoing-series p {
+    width: 20em;
+    padding-left: 0.5em;
+  }
+}
+
 /* Desktop / Laptop View */
+
+@media (min-width: 1240px) {
+  .container {
+    width: 70vw;
+    position: relative;
+    left: 15%;
+    box-sizing: border-box;
+  }
+
+  .menu {
+    display: flex;
+    position: relative;
+    min-width: 60%;
+    min-height: auto;
+    transition: none;
+    background-color: transparent;
+  }
+
+  .menu ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu ul li {
+    padding: 0;
+    font-size: 1.4em;
+  }
+
+  .barMenu {
+    display: none;
+  }
+
+  .closeMenu {
+    display: none;
+  }
+
+  input {
+    color: beige;
+    background-color: black;
+    border: 1px solid beige;
+    width: 200px;
+    height: 25px;
+    padding-left: 0.5em;
+  }
+
+  .searchAnime {
+    display: flex;
+  }
+
+  #search-btn {
+    position: absolute;
+    top: 0.7%;
+    right: 0.5%;
+  }
+
+  .recent-release {
+    border-left: 0.15em solid #fa8131;
+    border-right: 0.15em solid #fa8131;
+  }
+
+  .header {
+    padding: 1em 0 0 0;
+  }
+
+  .popular-ongoing-update {
+    display: flex;
+    flex-flow: column wrap;
+    height: 68.8em;
+    border-bottom: 0.15em solid #fa8131;
+    border-left: 0.15em solid #fa8131;
+    border-right: 0.15em solid #fa8131;
+    margin-bottom: 1em;
+  }
+
+  .description {
+    width: 26em;
+  }
+
+  .recent-added-header,
+  .ads,
+  .ongoing-series-header,
+  .genres-header {
+    border: 0.15em solid #fa8131;
+    margin-bottom: 1em;
+  }
+
+  .recent-added-header p,
+  .ads p,
+  .ongoing-series-header p,
+  .genres-header p {
+    border: 0;
+    margin: 0;
+  }
+
+  .footer ul {
+    transform: translate(-25%, 0);
+  }
+
+  #copyright {
+    position: relative;
+    left: -5%;
+  }
+
+  .footer p:last-child {
+    padding: 0;
+    transform: translate(85%, 0);
+  }
+}

@@ -8,17 +8,17 @@
   <title>myWeb</title>
 </head>
 <body>
-  <div>
+  <div class="container">
     <header class="header">
       <div class="header-menu barMenu">
-        <img onclick="handler()" src="/resource/bar-menu.svg" alt="bar menu" />
+        <img onclick="displayMenu()" src="/resource/bar-menu.svg" alt="bar menu" />
       </div>
       <div class="header-menu" id="logo">
         <img src="/resource/logo.png" width="100px" alt="Donghua Anime logo" />
       </div>
       <div class="menu" id="isNavHidden">
         <div class="closeMenu">
-          <img onclick="handler()" src="/resource/close.png" width="24px" alt="close menu" />
+          <img onclick="displayMenu()" src="/resource/close.png" width="24px" alt="close menu" />
         </div>
         <ul>
           <li><a>Home</a></li>
@@ -28,8 +28,11 @@
           <li><a>Popular</a></li>
         </ul>
       </div>
-      <div class="header-menu" id="search-btn">
-        <img src="/resource/search4.svg" alt="search logo"/>
+      <div class="searcAnime">
+        <input type="text" placeholder="search" />
+        <div class="header-menu" id="search-btn">
+          <img src="/resource/search4.svg" width="24px" alt="search logo"/>
+        </div>
       </div>
     </header>
     <di class="release">
@@ -178,7 +181,7 @@
         </ul>
       </div>
       <div class="popular-ongoing-update">
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/AnJieShenShi.jpg" width="150" height="200" alt="An jie shen shi" />
           </a>
@@ -188,7 +191,7 @@
             <p>Lastest: Episode 9</p>
           </div>
         </div>
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/ChangAnHuanJie.jpeg" width="150" height="200" alt="Chang an huan jie" />
           </a>
@@ -198,7 +201,7 @@
             <p>Lastest: Episode 13</p>
           </div>
         </div>
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/DoulouDalu.jpg" width="150" height="200" alt="Douluo dalu" />
           </a>
@@ -208,7 +211,7 @@
             <p>Lastest: Episode 115</p>
           </div>
         </div>
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/DubuXiaoyao.jpg" width="150" height="200" alt="Dubu xiaoyao" />
           </a>
@@ -218,7 +221,7 @@
             <p>Lastest: Episode 75</p>
           </div>
         </div>
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/JueshiWuhun.jpg" width="150" height="200" alt="Jueshi wuhun" />
           </a>
@@ -228,7 +231,7 @@
             <p>Lastest: Episode 39</p>
           </div>
         </div>
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/LiuXingHuanJian.jpg" width="150" height="200" alt="Lui xing huan jian" />
           </a>
@@ -238,7 +241,7 @@
             <p>Lastest: Episode 11</p>
           </div>
         </div>
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/MoDaoZuShi.jpeg" width="150" height="200" alt="Mo dao zu shi" />
           </a>
@@ -248,7 +251,7 @@
             <p>Lastest: Episode 15</p>
           </div>
         </div>
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/MuWangZhiWang.jpg" width="150" height="200" alt="Mu wang zhi wang" />
           </a>
@@ -258,7 +261,7 @@
             <p>Lastest: Episode 20</p>
           </div>
         </div>
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/QinShinMingYue_BaiBuFeiJian.jpg" width="150" height="200" alt="Qin shin ming yue" />
           </a>
@@ -268,7 +271,7 @@
             <p>Lastest: Episode 10</p>
           </div>
         </div>
-        <div width="405" Height="150">
+        <div class="description" width="405" Height="150">
           <a>
             <img src="/images/ShanHeJianXin.jpg" width="150" height="200" alt="Shan he jian xin" />
           </a>
@@ -280,10 +283,10 @@
         </div>
       </div>
     </di>
+    <div onclick="displayRecentAdded()" class="recent-added-header">
+      <p>Recent Added Series</p>
+    </div>
     <div class="added">
-      <div class="recent-added-header">
-        <p onclick="displayRecentAdded()">Recently Added Series</p>
-      </div>
       <div class="recent-added">
         <p><a>Wu shen zhu zai - Martial Master</a></p>
         <p><a>Wan jie xian zong - Wonderland</a></p>
@@ -307,15 +310,15 @@
         <p><a>Mo dao zu shi - The Founder of Diabolism</a></p>
       </div>
     </div>
-    <div class="ads">
+    <div class="advent">
       <div class="ads">
         <p>Advertisements</p>
       </div>
     </div>
+    <div class="ongoing-series-header">
+      <p onclick="displayOngoingSeries()">Ongoing series</p>
+    </div>
     <div class="ongoing">
-      <div class="ongoing-series-header">
-        <p onclick="displayOngoingSeries()">Ongoing series</p>
-      </div>
       <div class="ongoing-series">
         <p><a>Wu shen zhu zai - Martial Master</a></p>
         <p><a>Wan jie xian zong - Wonderland</a></p>
@@ -375,7 +378,7 @@
           <li><a>Contact us</a></li>
           <li><a>Privacy</a></li>
         </ul>
-        <p>&#169;</p>
+        <p id="copyright">&#169; Copyright</p>
         <p><a href="#">Back to top</a></p>
       </footer>
     </div>
