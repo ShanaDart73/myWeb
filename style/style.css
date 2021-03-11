@@ -4,30 +4,10 @@
 }
 
 body {
+  box-sizing: border-box;
   color: beige;
   background-color: black;
 }
-
-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 1em 1em 0 1em;
-}
-
-.menu{
-  position: fixed;
-  top: 10%;
-  left: 0;
-  background-color: black;
-  padding: 1em;
-  transition: width 5s ease;
-  min-width: 20vw;
-  min-height: 40vh;
-  z-index: 3;
-}
-
-.header-menu {}
 
 #logo img {
   border-radius: 0.5em;
@@ -36,6 +16,12 @@ header {
 @media screen and (max-width: 600px) {
   #logo img {
     width: 65px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  input {
+    display: none;
   }
 }
 
@@ -52,8 +38,322 @@ li {
   padding-bottom: 1em;
 }
 
-#search-btn {}
+figcaption {
+  padding-left: 1em;
+}
 
-.recent-release-header {
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1em 1em 0 1em;
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding: 1em;
+  transition: all 5s ease;
+  min-width: 80vw;
+  min-height: 100vh;
+  z-index: 3;
+}
+
+.barMenu > img:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #555;
+  filter: drop-shadow(2px 2px 2px #fa8131);
+}
+
+.closeMenu {
+  padding-bottom: 1em;
+}
+
+.closeMenu img:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px #fa8131);
+}
+
+/* ... */
+
+.recent-release-header,
+.popular-ongoing-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fa8131;
+}
+
+.recent-release-header p,
+.popular-ongoing-header p {
+  font-size: 1.3em;
+  padding-left: 1em;
+}
+
+.recent-release-header ul,
+.popular-ongoing-header ul {
+  display: flex;
+}
+
+.recent-release-header ul li,
+.popular-ongoing-header ul li {
+  padding: 0.2em 1em 0 0;
+}
+
+.recent-release-header ul li a:hover,
+.popular-ongoing-header ul li a:hover {
+  color: black;
+  
+}
+
+/* Recent Release */
+
+.recent-release {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.recent-release a {
+  padding-bottom: 1em;
+}
+
+.recent-release a:hover {
+  color: black;
+  background-color: #fa8131;
+}
+
+/* Popular Ongoing */
+
+.popular-ongoing-update {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1.3em;
+}
+
+.popular-ongoing-update > div {
+  display: flex;
+  padding-bottom: 1em;
+}
+
+.popular-ongoing-update div div {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1em 0 0 1em;
+}
+
+.popular-ongoing-update p {
+  padding-bottom: 0.5em;
+}
+/* ... */
+
+.recent-added-header p,
+.ads p,
+.ongoing-series-header p,
+.genres-header p {
+  border: 1px solid #fa8131;
+  padding: 0.5em;
+  margin: 0 1em 1em 1em;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.recent-added,
+.ongoing-series,
+.genres {
+  padding: 0 1em 1em 1em;
+  margin: 0 1em;
+}
+
+.recent-added p,
+.ongoing-series p,
+.genres p {
+  padding-bottom: 0.5em;
+}
+
+.genres {
+  display: flex;
+  flex-flow: column wrap;
+  height: 200px;
+}
+
+/* ... */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer ul > li {
+  padding-right: 1.5em;
+}
+
+.footer p {
+  padding: 0 0.5em;
+}
+
+/* Mobile Landscape View */
+
+@media (min-width: 750px) {
+  .container {
+    width: 90vw;
+    position: relative;
+    left: 5%;
+  }
+}
+
+/* Tablet View */
+
+@media (min-width: 880px) {
+  .container {
+    width: 80vw;
+    position: relative;
+    left: 10%;
+  }
+
+  .popular-ongoing-update {
+    display: flex;
+    flex-flow: column wrap;
+    height: 68.8em;
+  }
+
+  .description {
+    width: 20.5em;
+  }
+
+  .recent-added,
+  .ongoing-series {
+    display: flex;
+    flex-flow: column wrap;
+    height: 19em;
+    margin: 0;
+  }
+
+  .recent-added p,
+  .ongoing-series p {
+    width: 20em;
+    padding-left: 0.5em;
+  }
+}
+
+/* Desktop / Laptop View */
+
+@media (min-width: 1240px) {
+  .container {
+    width: 70vw;
+    position: relative;
+    left: 15%;
+    box-sizing: border-box;
+  }
+
+  .menu {
+    display: flex;
+    position: relative;
+    min-width: 60%;
+    min-height: auto;
+    transition: none;
+    background-color: transparent;
+  }
+
+  .menu ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu ul li {
+    padding: 0;
+    font-size: 1.4em;
+  }
+
+  .barMenu {
+    display: none;
+  }
+
+  .closeMenu {
+    display: none;
+  }
+
+  input {
+    color: beige;
+    background-color: black;
+    border: 1px solid beige;
+    width: 200px;
+    height: 25px;
+    padding-left: 0.5em;
+  }
+
+  .searchAnime {
+    display: flex;
+  }
+
+  #search-btn {
+    position: absolute;
+    top: 0.7%;
+    right: 0.5%;
+  }
+
+  .recent-release {
+    border-left: 0.15em solid #fa8131;
+    border-right: 0.15em solid #fa8131;
+  }
+
+  .header {
+    padding: 1em 0 0 0;
+  }
+
+  .popular-ongoing-update {
+    display: flex;
+    flex-flow: column wrap;
+    height: 68.8em;
+    border-bottom: 0.15em solid #fa8131;
+    border-left: 0.15em solid #fa8131;
+    border-right: 0.15em solid #fa8131;
+    margin-bottom: 1em;
+  }
+
+  .description {
+    width: 26em;
+  }
+
+  .recent-added-header,
+  .ads,
+  .ongoing-series-header,
+  .genres-header {
+    border: 0.15em solid #fa8131;
+    margin-bottom: 1em;
+  }
+
+  .recent-added-header p,
+  .ads p,
+  .ongoing-series-header p,
+  .genres-header p {
+    border: 0;
+    margin: 0;
+  }
+
+  .footer ul {
+    transform: translate(-25%, 0);
+  }
+
+  #copyright {
+    position: relative;
+    left: -5%;
+  }
+
+  .footer p:last-child {
+    padding: 0;
+    transform: translate(85%, 0);
+  }
 }

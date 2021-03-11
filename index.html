@@ -8,174 +8,182 @@
   <title>myWeb</title>
 </head>
 <body>
-  <header>
-    <div class="header-menu barMenu">
-      <img onclick="handler()" src="/resource/bar-menu.svg" alt="bar menu" />
-      <div class="menu" id="is-hidden">
+  <div class="container">
+    <header class="header">
+      <div class="header-menu barMenu">
+        <img onclick="displayMenu()" src="/resource/bar-menu.svg" alt="bar menu" />
+      </div>
+      <div class="header-menu" id="logo">
+        <img src="/resource/logo.png" width="100px" alt="Donghua Anime logo" />
+      </div>
+      <div class="menu" id="isNavHidden">
+        <div class="closeMenu">
+          <img onclick="displayMenu()" src="/resource/close.png" width="24px" alt="close menu" />
+        </div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Anime List</a></li>
-          <li><a href="#">New Season</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Popular</a></li>
+          <li><a>Home</a></li>
+          <li><a>Anime List</a></li>
+          <li><a>New Season</a></li>
+          <li><a>Movies</a></li>
+          <li><a>Popular</a></li>
         </ul>
       </div>
-    </div>
-    <div class="header-menu" id="logo">
-      <img src="/resource/logo.png" width="100px" alt="Donghua Anime logo" />
-    </div>
-    <div class="header-menu" id="search-btn">
-      <img src="/resource/search4.svg" alt="search logo"/>
-    </div>
-  </header>
-  <div>
-    <div class="recent-release-header">
-      <p>Recent Release</p>
-      <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-      </ul>
-    </div>
-    <di class="recent-release">
-      <a href="https://www26.gogoanimes.tv/category/tian-bao-fuyao-lu">
-        <figure>
-          <img src="/images/TianBaoFuyaoLu.jpg" width="200" height="250" alt="Tian bao fuyao lu" />
-          <figcaption>Tian bao fuyao lu</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/dubu-xiaoyao">
-        <figure>
-          <img src="/images/DubuXiaoyao.jpg" width="200" height="250" alt="Dubu xiaoyao" />
-          <figcaption>Dubu xiaoyao</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/wan-jie-xian-zong">
-        <figure>
-          <img src="/images/WanJieXianZong.jpg" width="200" height="250" alt="Wan Jie Xian Zong" />
-          <figcaption>Wan jie xian zong</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/qin-shi-ming-yue-bai-bu-fei-jian">
-        <figure>
-          <img src="/images/QinShinMingYue_BaiBuFeiJian.jpg" width="200" height="250" alt="Qin shin ming yue" />
-          <figcaption>Qin shin ming yue</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/mo-dao-zu-shi">
-        <figure>
-          <img src="/images/MoDaoZuShi.jpeg" width="200" height="250" alt="Mo dao zu shi" />
-          <figcaption>Mo dao zu shi</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/an-jie-shen-shi">
-        <figure>
-          <img src="/images/AnJieShenShi.jpg" width="200" height="250" alt="An jie shen shi" />
-          <figcaption>An jie shen shi</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/chang-an-huan-jie">
-        <figure>
-          <img src="/images/ChangAnHuanJie.jpeg" width="200" height="250" alt="Chang an huan jie" />
-          <figcaption>Chang an huan jie</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/douluo-dalu-soul-land">
-        <figure>
-          <img src="/images/DoulouDalu.jpg" width="200" height="250" alt="Douluo dolu" />
-          <figcaption>Douluo dalu</figcaption>
-        </figure>
-      </a>
-      <a href="https://izfanmade.com/tag/jueshi-wuhun/">
-        <figure>
-          <img src="/images/JueshiWuhun.jpg" width="200" height="250" alt="Jue shin wuhun" />
-          <figcaption>Jueshi wuhun</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/liu-xing-huan-jian">
-        <figure>
-          <img src="/images/LiuXingHuanJian.jpg" width="200" height="250" alt="Liu xing huan jian" />
-          <figcaption>Liu xing huan jian</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/mu-wang-zhi-wang-you-du-zhan">
-        <figure>
-          <img src="/images/MuWangZhiWang.jpg" width="200" height="250" alt="Mu wang zhi wang" />
-          <figcaption>Mu wang zhi wang</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/shan-he-jian-xin">
-        <figure>
-          <img src="/images/ShanHeJianXin.jpg" width="200" height="250" alt="Shan he jian xin" />
-          <figcaption>Shan he jian xin</figcaption>
-        </figure>
-      </a>
-      <a href="https://izfanmade.com/jing-shuang-cheng-feng-qi-anime-episode-01-english-sub/">
-        <figure>
-          <img src="/images/ShuJingJi.jpg" width="200" height="250" alt="Shu jing ji" />
-          <figcaption>Shu jing ji</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/si-hai-jing-qi">
-        <figure>
-          <img src="/images/SiHaiJingQi.png" width="200" height="250" alt="Si hai jing qi" />
-          <figcaption>Si hai jing qi</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/tunshi-xingkong">
-        <figure>
-          <img src="/images/TunshiXingkong.jpg" width="200" height="250" alt="Tunshi xingkong" />
-          <figcaption>Tunshi xingkong</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/wan-jie-fa-shen">
-        <figure>
-          <img src="/images/WanJieFaShen.jpg" width="200" height="250" alt="Wan jie fa shen" />
-          <figcaption>Wan jie fa shen</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/wei-wo-du-shen">
-        <figure>
-          <img src="/images/WeiWoDuShen.jpg" width="200" height="250" alt="Wei wo du shen" />
-          <figcaption>Wei wo du shen</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/wu-shen-zhu-zai">
-        <figure>
-          <img src="/images/WuShenZhuZai.jpg" width="200" height="250" alt="Wu shen zhu zai" />
-          <figcaption>Wu shen zhu zai</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/xian-feng-jian-yu-lu">
-        <figure>
-          <img src="/images/XianFengJianYulu.jpeg" width="200" height="250" alt="Xian feng jian yulu" />
-          <figcaption>Xian feng jian yulu</figcaption>
-        </figure>
-      </a>
-      <a href="https://www26.gogoanimes.tv/category/you-yao">
-        <figure>
-          <img src="/images/YouYao.jpg" width="200" height="250" alt="You yao" />
-          <figcaption>You yao</figcaption>
-        </figure>
-      </a>
+      <div class="searcAnime">
+        <input type="text" placeholder="search" />
+        <div class="header-menu" id="search-btn">
+          <img src="/resource/search4.svg" width="24px" alt="search logo"/>
+        </div>
+      </div>
+    </header>
+    <di class="release">
+      <div class="recent-release-header">
+        <p>Recent Release</p>
+        <ul>
+          <li><a>1</a></li>
+          <li><a>2</a></li>
+          <li><a>3</a></li>
+          <li><a>4</a></li>
+          <li><a>5</a></li>
+        </ul>
+      </div>
+      <di class="recent-release">
+        <a href="https://www26.gogoanimes.tv/category/tian-bao-fuyao-lu" target="_blank">
+          <figure>
+            <img src="/images/TianBaoFuyaoLu.jpg" width="200" height="250" alt="Tian bao fuyao lu" />
+            <figcaption>Tian bao fuyao lu</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/dubu-xiaoyao" target="_blank">
+          <figure>
+            <img src="/images/DubuXiaoyao.jpg" width="200" height="250" alt="Dubu xiaoyao" />
+            <figcaption>Dubu xiaoyao</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/wan-jie-xian-zong" target="_blank">
+          <figure>
+            <img src="/images/WanJieXianZong.jpg" width="200" height="250" alt="Wan Jie Xian Zong" />
+            <figcaption>Wan jie xian zong</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/qin-shi-ming-yue-bai-bu-fei-jian" target="_blank">
+          <figure>
+            <img src="/images/QinShinMingYue_BaiBuFeiJian.jpg" width="200" height="250" alt="Qin shin ming yue" />
+            <figcaption>Qin shin ming yue</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/mo-dao-zu-shi" target="_blank">
+          <figure>
+            <img src="/images/MoDaoZuShi.jpeg" width="200" height="250" alt="Mo dao zu shi" />
+            <figcaption>Mo dao zu shi</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/an-jie-shen-shi" target="_blank">
+          <figure>
+            <img src="/images/AnJieShenShi.jpg" width="200" height="250" alt="An jie shen shi" />
+            <figcaption>An jie shen shi</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/chang-an-huan-jie" target="_blank">
+          <figure>
+            <img src="/images/ChangAnHuanJie.jpeg" width="200" height="250" alt="Chang an huan jie" />
+            <figcaption>Chang an huan jie</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/douluo-dalu-soul-land" target="_blank">
+          <figure>
+            <img src="/images/DoulouDalu.jpg" width="200" height="250" alt="Douluo dolu" />
+            <figcaption>Douluo dalu</figcaption>
+          </figure>
+        </a>
+        <a href="https://izfanmade.com/tag/jueshi-wuhun/" target="_blank">
+          <figure>
+            <img src="/images/JueshiWuhun.jpg" width="200" height="250" alt="Jue shin wuhun" />
+            <figcaption>Jueshi wuhun</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/liu-xing-huan-jian" target="_blank">
+          <figure>
+            <img src="/images/LiuXingHuanJian.jpg" width="200" height="250" alt="Liu xing huan jian" />
+            <figcaption>Liu xing huan jian</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/mu-wang-zhi-wang-you-du-zhan" target="_blank">
+          <figure>
+            <img src="/images/MuWangZhiWang.jpg" width="200" height="250" alt="Mu wang zhi wang" />
+            <figcaption>Mu wang zhi wang</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/shan-he-jian-xin" target="_blank">
+          <figure>
+            <img src="/images/ShanHeJianXin.jpg" width="200" height="250" alt="Shan he jian xin" />
+            <figcaption>Shan he jian xin</figcaption>
+          </figure>
+        </a>
+        <a href="https://izfanmade.com/jing-shuang-cheng-feng-qi-anime-episode-01-english-sub/" target="_blank">
+          <figure>
+            <img src="/images/ShuJingJi.jpg" width="200" height="250" alt="Shu jing ji" />
+            <figcaption>Shu jing ji</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/si-hai-jing-qi" target="_blank">
+          <figure>
+            <img src="/images/SiHaiJingQi.png" width="200" height="250" alt="Si hai jing qi" />
+            <figcaption>Si hai jing qi</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/tunshi-xingkong" target="_blank">
+          <figure>
+            <img src="/images/TunshiXingkong.jpg" width="200" height="250" alt="Tunshi xingkong" />
+            <figcaption>Tunshi xingkong</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/wan-jie-fa-shen" target="_blank">
+          <figure>
+            <img src="/images/WanJieFaShen.jpg" width="200" height="250" alt="Wan jie fa shen" />
+            <figcaption>Wan jie fa shen</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/wei-wo-du-shen" target="_blank">
+          <figure>
+            <img src="/images/WeiWoDuShen.jpg" width="200" height="250" alt="Wei wo du shen" />
+            <figcaption>Wei wo du shen</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/wu-shen-zhu-zai" target="_blank">
+          <figure>
+            <img src="/images/WuShenZhuZai.jpg" width="200" height="250" alt="Wu shen zhu zai" />
+            <figcaption>Wu shen zhu zai</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/xian-feng-jian-yu-lu" target="_blank">
+          <figure>
+            <img src="/images/XianFengJianYulu.jpeg" width="200" height="250" alt="Xian feng jian yulu" />
+            <figcaption>Xian feng jian yulu</figcaption>
+          </figure>
+        </a>
+        <a href="https://www26.gogoanimes.tv/category/you-yao" target="_blank">
+          <figure>
+            <img src="/images/YouYao.jpg" width="200" height="250" alt="You yao" />
+            <figcaption>You yao</figcaption>
+          </figure>
+        </a>
+      </di>
     </di>
-    <div>
+    <div class="popular">
       <div class="popular-ongoing-header">
         <p>Polular Ongoing Update</p>
         <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
+          <li><a>1</a></li>
+          <li><a>2</a></li>
+          <li><a>3</a></li>
+          <li><a>4</a></li>
+          <li><a>5</a></li>
         </ul>
       </div>
       <div class="popular-ongoing-update">
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/AnJieShenShi.jpg" width="150" height="150" alt="An jie shen shi" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/AnJieShenShi.jpg" width="150" height="200" alt="An jie shen shi" />
           </a>
           <div>
             <p>An jie shen shi - Agents in Otherworld</p>
@@ -183,9 +191,9 @@
             <p>Lastest: Episode 9</p>
           </div>
         </div>
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/ChangAnHuanJie.jpeg" width="150" height="150" alt="Chang an huan jie" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/ChangAnHuanJie.jpeg" width="150" height="200" alt="Chang an huan jie" />
           </a>
           <div>
             <p>Chang an huan jie - Chang'an Magic Street</p>
@@ -193,9 +201,9 @@
             <p>Lastest: Episode 13</p>
           </div>
         </div>
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/DoulouDalu.jpg" width="150" height="150" alt="Douluo dalu" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/DoulouDalu.jpg" width="150" height="200" alt="Douluo dalu" />
           </a>
           <div>
             <p>Douluo dalu - Soul Land</p>
@@ -203,9 +211,9 @@
             <p>Lastest: Episode 115</p>
           </div>
         </div>
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/DubuXiaoyao.jpg" width="150" height="150" alt="Dubu xiaoyao" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/DubuXiaoyao.jpg" width="150" height="200" alt="Dubu xiaoyao" />
           </a>
           <div>
             <p>Dubu xiaoyao - One Step Toward Freedom</p>
@@ -213,9 +221,9 @@
             <p>Lastest: Episode 75</p>
           </div>
         </div>
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/JueshiWuhun.jpg" width="150" height="150" alt="Jueshi wuhun" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/JueshiWuhun.jpg" width="150" height="200" alt="Jueshi wuhun" />
           </a>
           <div>
             <p>Jueshi wuhun - Peerless Martial Spirit</p>
@@ -223,9 +231,9 @@
             <p>Lastest: Episode 39</p>
           </div>
         </div>
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/LiuXingHuanJian.jpg" width="150" height="150" alt="Lui xing huan jian" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/LiuXingHuanJian.jpg" width="150" height="200" alt="Lui xing huan jian" />
           </a>
           <div>
             <p>Liu xing huan jian - Meteor Magic Sword</p>
@@ -233,9 +241,9 @@
             <p>Lastest: Episode 11</p>
           </div>
         </div>
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/MoDaoZuShi.jpeg" width="150" height="150" alt="Mo dao zu shi" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/MoDaoZuShi.jpeg" width="150" height="200" alt="Mo dao zu shi" />
           </a>
           <div>
             <p>Mo dao zu shi Q - The Founder of Diabolism</p>
@@ -243,9 +251,9 @@
             <p>Lastest: Episode 15</p>
           </div>
         </div>
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/MuWangZhiWang.jpg" width="150" height="150" alt="Mu wang zhi wang" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/MuWangZhiWang.jpg" width="150" height="200" alt="Mu wang zhi wang" />
           </a>
           <div>
             <p>Mu wang zhi wang: Xuan guan si - Great King of the Grave</p>
@@ -253,9 +261,9 @@
             <p>Lastest: Episode 20</p>
           </div>
         </div>
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/QinShinMingYue_BaiBuFeiJian.jpg" width="150" height="150" alt="Qin shin ming yue" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/QinShinMingYue_BaiBuFeiJian.jpg" width="150" height="200" alt="Qin shin ming yue" />
           </a>
           <div>
             <p>Qin shi ming yue: Bai bu fei jian - The Legend of Swordman</p>
@@ -263,9 +271,9 @@
             <p>Lastest: Episode 10</p>
           </div>
         </div>
-        <div width="405" Height="150">
-          <a href="#">
-            <img src="/images/ShanHeJianXin.jpg" width="150" height="150" alt="Shan he jian xin" />
+        <div class="description" width="405" Height="150">
+          <a>
+            <img src="/images/ShanHeJianXin.jpg" width="150" height="200" alt="Shan he jian xin" />
           </a>
           <div>
             <p>Shan he jian xin - Thousand Autumns</p>
@@ -275,100 +283,106 @@
         </div>
       </div>
     </di>
-    <div>
-      <div class="recent-added-header">
-        <p>Recently Added Series</p>
-      </div>
+    <div onclick="displayRecentAdded()" class="recent-added-header">
+      <p>Recent Added Series</p>
+    </div>
+    <div class="added">
       <div class="recent-added">
-        <p><a href="#">Wu shen zhu zai - Martial Master</a></p>
-        <p><a href="#">Wan jie xian zong - Wonderland</a></p>
-        <p><a href="#">Wei wo du shen - I am the only god</a></p>
-        <p><a href="#">Douluo dalu - Soul Land</a></p>
-        <p><a href="#">Shan he jian xin - Thousand Autumns</a></p>
-        <p><a href="#">Shu ling ji - Spirit of the Book</a></p>
-        <p><a href="#">Chang an huan jie - Chang'an Magic Street</a></p>
-        <p><a href="#">Tunshi xingkong - Swallowed Star</a></p>
-        <p><a href="#">Wan jie fa shen - God of All Realms</a></p>
-        <p><a href="#">Liu xing huan jian - Meteor Magic Sword</a></p>
-        <p><a href="#">You yao - Are You Ok</a></p>
-        <p><a href="#">Dubu xiaoyao - One Step Toward Freedom</a></p>
-        <p><a href="#">Si hai jing qi - Beyond The Ocean</a></p>
-        <p><a href="#">An jie shen shi - Agents in Otherworld</a></p>
-        <p><a href="#">Qin shi ming yue: Bai bu fei jian - The Legend of Swordman</a></p>
-        <p><a href="#">Tian bao fuyao lu - Legend of Exorcism</a></p>
-        <p><a href="#">Jueshi wuhun - Peerless Martial Spirit</a></p>
-        <p><a href="#">Mu wang zhi wang: Xuan guan si - Great King of the Grave</a></p>
-        <p><a href="#">Xian feng jian yulu - Chronicles of Everlasting Wind and Sword Rain</a></p>
-        <p><a href="#">Mo dao zu shi - The Founder of Diabolism</a></p>
-      </div>
+        <p><a>Wu shen zhu zai - Martial Master</a></p>
+        <p><a>Wan jie xian zong - Wonderland</a></p>
+        <p><a>Wei wo du shen - I am the only god</a></p>
+        <p><a>Douluo dalu - Soul Land</a></p>
+        <p><a>Shan he jian xin - Thousand Autumns</a></p>
+        <p><a>Shu ling ji - Spirit of the Book</a></p>
+        <p><a>Chang an huan jie - Chang'an Magic Street</a></p>
+        <p><a>Tunshi xingkong - Swallowed Star</a></p>
+        <p><a>Wan jie fa shen - God of All Realms</a></p>
+        <p><a>Liu xing huan jian - Meteor Magic Sword</a></p>
+        <p><a>You yao - Are You Ok</a></p>
+        <p><a>Dubu xiaoyao - One Step Toward Freedom</a></p>
+        <p><a>Si hai jing qi - Beyond The Ocean</a></p>
+        <p><a>An jie shen shi - Agents in Otherworld</a></p>
+        <p><a>Qin shi ming yue: Bai bu fei jian - The Legend of Swordman</a></p>
+        <p><a>Tian bao fuyao lu - Legend of Exorcism</a></p>
+        <p><a>Jueshi wuhun - Peerless Martial Spirit</a></p>
+        <p><a>Mu wang zhi wang: Xuan guan si - Great King of the Grave</a></p>
+        <p><a>Xian feng jian yulu - Chronicles of Everlasting Wind and Sword Rain</a></p>
+        <p><a>Mo dao zu shi - The Founder of Diabolism</a></p>
       </div>
     </div>
-    <div class="ads">
-      <p>Advertisements</p>
-    </div>
-    <div>
-      <div class="ongoing-series-header">
-        <p>Ongoing series</p>
+    <div class="advent">
+      <div class="ads">
+        <p>Advertisements</p>
       </div>
+    </div>
+    <div class="ongoing-series-header">
+      <p onclick="displayOngoingSeries()">Ongoing series</p>
+    </div>
+    <div class="ongoing">
       <div class="ongoing-series">
-        <p><a href="#">Wu shen zhu zai - Martial Master</a></p>
-        <p><a href="#">Wan jie xian zong - Wonderland</a></p>
-        <p><a href="#">Wei wo du shen - I am the only god</a></p>
-        <p><a href="#">Douluo dalu - Soul Land</a></p>
-        <p><a href="#">Shan he jian xin - Thousand Autumns</a></p>
-        <p><a href="#">Shu ling ji - Spirit of the Book</a></p>
-        <p><a href="#">Chang an huan jie - Chang'an Magic Street</a></p>
-        <p><a href="#">Tunshi xingkong - Swallowed Star</a></p>
-        <p><a href="#">Wan jie fa shen - God of All Realms</a></p>
-        <p><a href="#">Liu xing huan jian - Meteor Magic Sword</a></p>
-        <p><a href="#">You yao - Are You Ok</a></p>
-        <p><a href="#">Dubu xiaoyao - One Step Toward Freedom</a></p>
-        <p><a href="#">Si hai jing qi - Beyond The Ocean</a></p>
-        <p><a href="#">An jie shen shi - Agents in Otherworld</a></p>
-        <p><a href="#">Qin shi ming yue: Bai bu fei jian - The Legend of Swordman</a></p>
-        <p><a href="#">Tian bao fuyao lu - Legend of Exorcism</a></p>
-        <p><a href="#">Jueshi wuhun - Peerless Martial Spirit</a></p>
-        <p><a href="#">Mu wang zhi wang: Xuan guan si - Great King of the Grave</a></p>
-        <p><a href="#">Xian feng jian yulu - Chronicles of Everlasting Wind and Sword Rain</a></p>
-        <p><a href="#">Mo dao zu shi - The Founder of Diabolism</a></p>
+        <p><a>Wu shen zhu zai - Martial Master</a></p>
+        <p><a>Wan jie xian zong - Wonderland</a></p>
+        <p><a>Wei wo du shen - I am the only god</a></p>
+        <p><a>Douluo dalu - Soul Land</a></p>
+        <p><a>Shan he jian xin - Thousand Autumns</a></p>
+        <p><a>Shu ling ji - Spirit of the Book</a></p>
+        <p><a>Chang an huan jie - Chang'an Magic Street</a></p>
+        <p><a>Tunshi xingkong - Swallowed Star</a></p>
+        <p><a>Wan jie fa shen - God of All Realms</a></p>
+        <p><a>Liu xing huan jian - Meteor Magic Sword</a></p>
+        <p><a>You yao - Are You Ok</a></p>
+        <p><a>Dubu xiaoyao - One Step Toward Freedom</a></p>
+        <p><a>Si hai jing qi - Beyond The Ocean</a></p>
+        <p><a>An jie shen shi - Agents in Otherworld</a></p>
+        <p><a>Qin shi ming yue: Bai bu fei jian - The Legend of Swordman</a></p>
+        <p><a>Tian bao fuyao lu - Legend of Exorcism</a></p>
+        <p><a>Jueshi wuhun - Peerless Martial Spirit</a></p>
+        <p><a>Mu wang zhi wang: Xuan guan si - Great King of the Grave</a></p>
+        <p><a>Xian feng jian yulu - Chronicles of Everlasting Wind and Sword Rain</a></p>
+        <p><a>Mo dao zu shi - The Founder of Diabolism</a></p>
       </div>
     </div>
-    <div>
+    <div class="type-genres">
       <div class="genres-header">
-        <p>Genres</p>
+        <p onclick="displayGenres()">Genres</p>
       </div>
-      <div class="genres">
-        <p><a href="#">Action</a></p>
-        <p><a href="#">Adventure</a></p>
-        <p><a href="#">Comedy</a></p>
-        <p><a href="#">Demons</a></p>
-        <p><a href="#">Fantasy</a></p>
-        <p><a href="#">Historical</a></p>
-        <p><a href="#">Horror</a></p>
-        <p><a href="#">Magic</a></p>
-        <p><a href="#">Martial Arts</a></p>
-        <p><a href="#">Mecha</a></p>
-        <p><a href="#">Military</a></p>
-        <p><a href="#">Music</a></p>
-        <p><a href="#">Mystery</a></p>
-        <p><a href="#">Parody</a></p>
-        <p><a href="#">Police</a></p>
-        <p><a href="#">Psychological</a></p>
-        <p><a href="#">Romance</a></p>
-        <p><a href="#">School</a></p>
-        <p><a href="#">Sci-Fi</a></p>
-        <p><a href="#">Supernatural</a></p>
+      <div id="genres">
+        <div class="genres">
+          <p><a>Action</a></p>
+          <p><a>Adventure</a></p>
+          <p><a>Comedy</a></p>
+          <p><a>Demons</a></p>
+          <p><a>Fantasy</a></p>
+          <p><a>Historical</a></p>
+          <p><a>Horror</a></p>
+          <p><a>Magic</a></p>
+          <p><a>Martial Arts</a></p>
+          <p><a>Mecha</a></p>
+          <p><a>Military</a></p>
+          <p><a>Music</a></p>
+          <p><a>Mystery</a></p>
+          <p><a>Parody</a></p>
+          <p><a>Police</a></p>
+          <p><a>Psychological</a></p>
+          <p><a>Romance</a></p>
+          <p><a>School</a></p>
+          <p><a>Sci-Fi</a></p>
+          <p><a>Supernatural</a></p>
+        </div>
       </div>
     </div>
-  <footer>
-    <ul>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Contact us</a></li>
-      <li><a href="#">Privacy</a></li>
-    </ul>
-    <p>Copyright</p>
-    <p><a href="#">Back to top</a></p>
-  </footer>
+    <div class="type-footer">
+      <footer class="footer">
+        <ul>
+          <li><a>About us</a></li>
+          <li><a>Contact us</a></li>
+          <li><a>Privacy</a></li>
+        </ul>
+        <p id="copyright">&#169; Copyright</p>
+        <p><a href="#">Back to top</a></p>
+      </footer>
+    </div>
+  </div>
   <script src="script/index.js"></script>
 </body>
 </html>
