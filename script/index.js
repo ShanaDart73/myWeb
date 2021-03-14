@@ -34,3 +34,30 @@ function displayGenres() {
   ? genres.hidden = true 
   : genres.hidden = false;
 }
+
+/* Search Input */
+
+const animeList = document.querySelectorAll('.recent-release img[title]');
+const titles = [];
+
+for (let obj of animeList) {
+  titles.push(obj.attributes.title.value);
+}
+
+document.querySelector('#search').addEventListener('input', (e) => {
+  let arrSuggestion = [];
+  if (e.target.value) {
+    arrSuggestion = titles.filter(title => title.toLowerCase().includes(e.target.value));
+    arrSuggestion = arrSuggestion.map(title => `<li>${title}</li>`);
+  }
+  showTitleSuggestion(arrSuggestion);
+});
+
+const outputSuggestion = document.querySelector('.outputSuggestion');
+outputSuggestion.hidden = true;
+
+function showTitleSuggestion(arr) {
+  const html = !arr.length ? '' : arr.join('');
+  document.querySelector('.searchAnime ul').innerHTML = html;
+  outputSuggestion.style.display = 'block';
+}

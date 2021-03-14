@@ -28,8 +28,9 @@
           <li><a>Popular</a></li>
         </ul>
       </div>
-      <div class="searcAnime">
-        <input type="text" placeholder="search" />
+      <div class="searchAnime">
+        <input type="text" id="search" name="title" placeholder="search" />
+        <ul class="outputSuggestion"></ul>
         <div class="header-menu" id="search-btn">
           <img src="/resource/search4.svg" width="24px" alt="search logo"/>
         </div>
@@ -49,121 +50,121 @@
       <di class="recent-release">
         <a href="https://www26.gogoanimes.tv/category/tian-bao-fuyao-lu" target="_blank">
           <figure>
-            <img src="/images/TianBaoFuyaoLu.jpg" width="200" height="250" alt="Tian bao fuyao lu" />
+            <img src="/images/TianBaoFuyaoLu.jpg" title="Tian bao fuyao lu" style="width: 200px; height: 250px;" alt="Tian bao fuyao lu" />
             <figcaption>Tian bao fuyao lu</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/dubu-xiaoyao" target="_blank">
           <figure>
-            <img src="/images/DubuXiaoyao.jpg" width="200" height="250" alt="Dubu xiaoyao" />
+            <img src="/images/DubuXiaoyao.jpg" title="Dubu xiaoyao" style="width: 200px; height: 250px;" alt="Dubu xiaoyao" />
             <figcaption>Dubu xiaoyao</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/wan-jie-xian-zong" target="_blank">
           <figure>
-            <img src="/images/WanJieXianZong.jpg" width="200" height="250" alt="Wan Jie Xian Zong" />
+            <img src="/images/WanJieXianZong.jpg" title="Wan Jie Xian Zong" style="width: 200px; height: 250px;" alt="Wan Jie Xian Zong" />
             <figcaption>Wan jie xian zong</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/qin-shi-ming-yue-bai-bu-fei-jian" target="_blank">
           <figure>
-            <img src="/images/QinShinMingYue_BaiBuFeiJian.jpg" width="200" height="250" alt="Qin shin ming yue" />
+            <img src="/images/QinShinMingYue_BaiBuFeiJian.jpg" title="Qin shin ming yue" style="width: 200px; height: 250px;" alt="Qin shin ming yue" />
             <figcaption>Qin shin ming yue</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/mo-dao-zu-shi" target="_blank">
           <figure>
-            <img src="/images/MoDaoZuShi.jpeg" width="200" height="250" alt="Mo dao zu shi" />
+            <img src="/images/MoDaoZuShi.jpeg" title="Mo dao zu shi" style="width: 200px; height: 250px;" alt="Mo dao zu shi" />
             <figcaption>Mo dao zu shi</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/an-jie-shen-shi" target="_blank">
           <figure>
-            <img src="/images/AnJieShenShi.jpg" width="200" height="250" alt="An jie shen shi" />
+            <img src="/images/AnJieShenShi.jpg" title="An jie shen shi" style="width: 200px; height: 250px;" alt="An jie shen shi" />
             <figcaption>An jie shen shi</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/chang-an-huan-jie" target="_blank">
           <figure>
-            <img src="/images/ChangAnHuanJie.jpeg" width="200" height="250" alt="Chang an huan jie" />
+            <img src="/images/ChangAnHuanJie.jpeg" title="Chang an huan jie" style="width: 200px; height: 250px;" alt="Chang an huan jie" />
             <figcaption>Chang an huan jie</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/douluo-dalu-soul-land" target="_blank">
           <figure>
-            <img src="/images/DoulouDalu.jpg" width="200" height="250" alt="Douluo dolu" />
+            <img src="/images/DoulouDalu.jpg" title="Douluo dolu" style="width: 200px; height: 250px;" alt="Douluo dolu" />
             <figcaption>Douluo dalu</figcaption>
           </figure>
         </a>
         <a href="https://izfanmade.com/tag/jueshi-wuhun/" target="_blank">
           <figure>
-            <img src="/images/JueshiWuhun.jpg" width="200" height="250" alt="Jue shin wuhun" />
+            <img src="/images/JueshiWuhun.jpg" title="Jue shin wuhun" style="width: 200px; height: 250px;" alt="Jue shin wuhun" />
             <figcaption>Jueshi wuhun</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/liu-xing-huan-jian" target="_blank">
           <figure>
-            <img src="/images/LiuXingHuanJian.jpg" width="200" height="250" alt="Liu xing huan jian" />
+            <img src="/images/LiuXingHuanJian.jpg" title="Liu xing huan jian" style="width: 200px; height: 250px;" alt="Liu xing huan jian" />
             <figcaption>Liu xing huan jian</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/mu-wang-zhi-wang-you-du-zhan" target="_blank">
           <figure>
-            <img src="/images/MuWangZhiWang.jpg" width="200" height="250" alt="Mu wang zhi wang" />
+            <img src="/images/MuWangZhiWang.jpg" title="Mu wang zhi wang" style="width: 200px; height: 250px;" alt="Mu wang zhi wang" />
             <figcaption>Mu wang zhi wang</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/shan-he-jian-xin" target="_blank">
           <figure>
-            <img src="/images/ShanHeJianXin.jpg" width="200" height="250" alt="Shan he jian xin" />
+            <img src="/images/ShanHeJianXin.jpg" title="Shan he jian xin" style="width: 200px; height: 250px;" alt="Shan he jian xin" />
             <figcaption>Shan he jian xin</figcaption>
           </figure>
         </a>
         <a href="https://izfanmade.com/jing-shuang-cheng-feng-qi-anime-episode-01-english-sub/" target="_blank">
           <figure>
-            <img src="/images/ShuJingJi.jpg" width="200" height="250" alt="Shu jing ji" />
+            <img src="/images/ShuJingJi.jpg" title="Shu jing ji" style="width: 200px; height: 250px;" alt="Shu jing ji" />
             <figcaption>Shu jing ji</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/si-hai-jing-qi" target="_blank">
           <figure>
-            <img src="/images/SiHaiJingQi.png" width="200" height="250" alt="Si hai jing qi" />
+            <img src="/images/SiHaiJingQi.png" title="Si hai jing qi" style="width: 200px; height: 250px;" alt="Si hai jing qi" />
             <figcaption>Si hai jing qi</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/tunshi-xingkong" target="_blank">
           <figure>
-            <img src="/images/TunshiXingkong.jpg" width="200" height="250" alt="Tunshi xingkong" />
+            <img src="/images/TunshiXingkong.jpg" title="Tunshi xingkong" style="width: 200px; height: 250px;" alt="Tunshi xingkong" />
             <figcaption>Tunshi xingkong</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/wan-jie-fa-shen" target="_blank">
           <figure>
-            <img src="/images/WanJieFaShen.jpg" width="200" height="250" alt="Wan jie fa shen" />
+            <img src="/images/WanJieFaShen.jpg" title="Wan jie fa shen" style="width: 200px; height: 250px;" alt="Wan jie fa shen" />
             <figcaption>Wan jie fa shen</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/wei-wo-du-shen" target="_blank">
           <figure>
-            <img src="/images/WeiWoDuShen.jpg" width="200" height="250" alt="Wei wo du shen" />
+            <img src="/images/WeiWoDuShen.jpg" title="Wei wo du shen" style="width: 200px; height: 250px;" alt="Wei wo du shen" />
             <figcaption>Wei wo du shen</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/wu-shen-zhu-zai" target="_blank">
           <figure>
-            <img src="/images/WuShenZhuZai.jpg" width="200" height="250" alt="Wu shen zhu zai" />
+            <img src="/images/WuShenZhuZai.jpg" title="Wu shen zhu zai" style="width: 200px; height: 250px;" alt="Wu shen zhu zai" />
             <figcaption>Wu shen zhu zai</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/xian-feng-jian-yu-lu" target="_blank">
           <figure>
-            <img src="/images/XianFengJianYulu.jpeg" width="200" height="250" alt="Xian feng jian yulu" />
+            <img src="/images/XianFengJianYulu.jpeg" title="Xian feng jian yulu" style="width: 200px; height: 250px;" alt="Xian feng jian yulu" />
             <figcaption>Xian feng jian yulu</figcaption>
           </figure>
         </a>
         <a href="https://www26.gogoanimes.tv/category/you-yao" target="_blank">
           <figure>
-            <img src="/images/YouYao.jpg" width="200" height="250" alt="You yao" />
+            <img src="/images/YouYao.jpg" title="You yao" style="width: 200px; height: 250px;" alt="You yao" />
             <figcaption>You yao</figcaption>
           </figure>
         </a>
@@ -183,7 +184,7 @@
       <div class="popular-ongoing-update">
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/AnJieShenShi.jpg" width="150" height="200" alt="An jie shen shi" />
+            <img src="/images/AnJieShenShi.jpg" style="width: 150px; height: 200px;" alt="An jie shen shi" />
           </a>
           <div>
             <p>An jie shen shi - Agents in Otherworld</p>
@@ -193,7 +194,7 @@
         </div>
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/ChangAnHuanJie.jpeg" width="150" height="200" alt="Chang an huan jie" />
+            <img src="/images/ChangAnHuanJie.jpeg" style="width: 150px; height: 200px;" alt="Chang an huan jie" />
           </a>
           <div>
             <p>Chang an huan jie - Chang'an Magic Street</p>
@@ -203,7 +204,7 @@
         </div>
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/DoulouDalu.jpg" width="150" height="200" alt="Douluo dalu" />
+            <img src="/images/DoulouDalu.jpg" style="width: 150px; height: 200px;" alt="Douluo dalu" />
           </a>
           <div>
             <p>Douluo dalu - Soul Land</p>
@@ -213,7 +214,7 @@
         </div>
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/DubuXiaoyao.jpg" width="150" height="200" alt="Dubu xiaoyao" />
+            <img src="/images/DubuXiaoyao.jpg" style="width: 150px; height: 200px;" alt="Dubu xiaoyao" />
           </a>
           <div>
             <p>Dubu xiaoyao - One Step Toward Freedom</p>
@@ -223,7 +224,7 @@
         </div>
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/JueshiWuhun.jpg" width="150" height="200" alt="Jueshi wuhun" />
+            <img src="/images/JueshiWuhun.jpg" style="width: 150px; height: 200px;" alt="Jueshi wuhun" />
           </a>
           <div>
             <p>Jueshi wuhun - Peerless Martial Spirit</p>
@@ -233,7 +234,7 @@
         </div>
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/LiuXingHuanJian.jpg" width="150" height="200" alt="Lui xing huan jian" />
+            <img src="/images/LiuXingHuanJian.jpg" style="width: 150px; height: 200px;" alt="Lui xing huan jian" />
           </a>
           <div>
             <p>Liu xing huan jian - Meteor Magic Sword</p>
@@ -243,7 +244,7 @@
         </div>
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/MoDaoZuShi.jpeg" width="150" height="200" alt="Mo dao zu shi" />
+            <img src="/images/MoDaoZuShi.jpeg" style="width: 150px; height: 200px;" alt="Mo dao zu shi" />
           </a>
           <div>
             <p>Mo dao zu shi Q - The Founder of Diabolism</p>
@@ -253,7 +254,7 @@
         </div>
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/MuWangZhiWang.jpg" width="150" height="200" alt="Mu wang zhi wang" />
+            <img src="/images/MuWangZhiWang.jpg" style="width: 150px; height: 200px;" alt="Mu wang zhi wang" />
           </a>
           <div>
             <p>Mu wang zhi wang: Xuan guan si - Great King of the Grave</p>
@@ -263,7 +264,7 @@
         </div>
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/QinShinMingYue_BaiBuFeiJian.jpg" width="150" height="200" alt="Qin shin ming yue" />
+            <img src="/images/QinShinMingYue_BaiBuFeiJian.jpg" style="width: 150px; height: 200px;" alt="Qin shin ming yue" />
           </a>
           <div>
             <p>Qin shi ming yue: Bai bu fei jian - The Legend of Swordman</p>
@@ -273,7 +274,7 @@
         </div>
         <div class="description" width="405" Height="150">
           <a>
-            <img src="/images/ShanHeJianXin.jpg" width="150" height="200" alt="Shan he jian xin" />
+            <img src="/images/ShanHeJianXin.jpg" style="width: 150px; height: 200px;" alt="Shan he jian xin" />
           </a>
           <div>
             <p>Shan he jian xin - Thousand Autumns</p>
