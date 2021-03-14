@@ -44,6 +44,20 @@ for (let obj of animeList) {
   titles.push(obj.attributes.title.value);
 }
 
+const linkList = document.querySelectorAll('.recent-release a[href]');
+const links = [];
+
+for (let obj of linkList) {
+  links.push(obj.attributes[0].nodeValue);
+}
+
+const hrefLink = links.map(link => `<a href="${link}" target="_blank">`);
+
+const titleAndLink = titles.map((title, src) => ({ name: title, link: hrefLink[src] }));
+console.log(titleAndLink);
+
+/* ...  */
+
 document.querySelector('#search').addEventListener('input', (e) => {
   let arrSuggestion = [];
   if (e.target.value) {
