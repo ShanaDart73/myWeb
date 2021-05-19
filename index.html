@@ -30,8 +30,15 @@
       </div>
       <div class="searchAnime">
         <!-- absolute url: another website, relative url: within website-->
-        <form action="url" autocomplete="on">
-          <input type="search" id="search" name="title" placeholder="search" />
+        <form action="/url" method="GET">
+          <input type="text" id="search" name="title" placeholder="search" list="titles" autocomplete="off" />
+          <datalist id="titles">
+            <option value="Tian bao fuyao lu" />
+            <option value="Dubu xiaoyao" />
+            <option value="Wan Jie Xian Zong" />
+            <option value="Qin shin ming yue" />
+            <option value="Mo dao zu shi" />
+          </datalist>
           <div class="header-menu" id="search-btn">
             <img src="/resource/search4.svg" width="24px" alt="search logo"/>
           </div>
