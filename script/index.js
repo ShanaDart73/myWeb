@@ -36,10 +36,10 @@ function displayGenres() {
 }
 
 /* Search Input */
-const opt = document.querySelectorAll('.option');
+const inputText = document.querySelector('#search-btn');
 
 function messageDisplay() {
   alert("You have clicked on tittle!");
 }
 
-//opt.addEventListener('click', messageDisplay);
+inputText.addEventListener('click', messageDisplay);
