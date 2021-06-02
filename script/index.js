@@ -34,3 +34,12 @@ function displayGenres() {
   ? genres.hidden = true 
   : genres.hidden = false;
 }
+
+/* Search Input */
+const inputText = document.querySelector('#search-btn');
+
+function messageDisplay() {
+  alert("You have clicked on tittle!");
+}
+
+inputText.addEventListener('click', messageDisplay);
