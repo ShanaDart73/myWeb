@@ -29,6 +29,7 @@ function displayOngoingSeries() {
 const genres = document.querySelector('#genres');
 genres.hidden = true;
 
+// token test
 function displayGenres() {
   (!genres.hidden) 
   ? genres.hidden = true 
